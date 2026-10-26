@@ -31,18 +31,37 @@ class starter {
 		System.out.println();
 		System.out.print("Please enter an integer: ");
 		int nu = sc.nextInt();
-		int c1 = 0;
+		int c1 = 1;
 		while (c1 < nu) {
 			int c2 = 0;
 			while (c2 < c1) {
-				System.out.print(" ");
+				System.out.print("*");
 				c2++;
 			}
-			int c3 = 0;
-			while (c3 < nu - c1) {
+			System.out.println();
+            c1++;
+	    }
+
+		System.out.println();
+		System.out.println("----------------------");
+		System.out.println("Reversed Star:");
+		System.out.print("Please enter an integer: ");
+		int a = sc.nextInt();
+		int b1 = 1;
+		while (b1 < a+1){
+			int b2 = a;
+			while (b2 > b1){
+				System.out.print(" ");
+				b2--;
+			}
+			int b3 = 0;
+			while(b3 <b1){
 				System.out.print("*");
-				c3++;
-		}
-	}
-}
+				b3++;
+			}
+			System.out.println();
+			b1++;		
+		}	
+    }
+}	
 
